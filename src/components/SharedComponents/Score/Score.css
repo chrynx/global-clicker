@@ -1,0 +1,10 @@
+.Score {
+    height: 50px;
+    width: 100%;
+    background: #2d4249;
+    color: #99c1bc;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}

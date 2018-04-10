@@ -1,0 +1,20 @@
+.Backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background: #2d4249;
+    opacity: 0.5;
+}
+
+.Open {
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+.Close {
+    transform: translateY(-100%);
+    transition: 0.5s;
+}

@@ -1,0 +1,12 @@
+.Button {
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 10px #2d4249;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right,#927682, #503240);
+}
+.Button:active {
+    transform: translateY(10px);
+    box-shadow: none;
+}

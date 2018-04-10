@@ -1,0 +1,49 @@
+.Layout {
+    display: flex;
+}
+.burger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 50%;
+}
+.burger:hover {
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+@keyframes pulse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(90);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+.burger div {
+    height: 5px;
+    width: 50%;
+    background: #2d4249;
+    border-radius: 20px;
+    
+}
