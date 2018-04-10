@@ -14,7 +14,7 @@ import ProfilePage from '../ProfilePage/ProfilePage';
 
 class Layout extends Component {
     state = {
-        page: 'homepage',
+        page: 'login',
         mobile: false,
         local: 0,
         global: 0
@@ -40,6 +40,16 @@ class Layout extends Component {
         }))
     }
 
+    register = () => {
+        this.setState({
+            page: 'register'
+        })
+    }
+    login = () => {
+        this.setState({
+            page: 'login'
+        })
+    }
     render() {
         let currentPage = null;
         switch (this.state.page) {
@@ -54,13 +64,17 @@ class Layout extends Component {
                 clicked={this.addScore}/>
                 break;
             case 'global':
-                currentPage = <GlobalPage />
+                currentPage = <GlobalPage
+                local={this.state.local}
+                global={this.state.global}/>
                 break;
             case 'login':
-                currentPage = <LoginPage />
+                currentPage = <LoginPage
+                clicked={this.register}/>
                 break;
             case 'register':
-                currentPage = <RegisterPage />
+                currentPage = <RegisterPage
+                clicked={this.login}/>
                 break;
             case 'profile':
                 currentPage = <ProfilePage />

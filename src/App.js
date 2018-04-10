@@ -38,3 +38,6 @@ export default App;
 //   register
 //     registerForm
 //   logout
+
+
+// Still need to add a leaderboard

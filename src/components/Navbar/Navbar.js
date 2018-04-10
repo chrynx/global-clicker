@@ -1,10 +1,15 @@
 import React from 'react';
 import classes from './Navbar.css';
+import { userInfo } from 'os';
 
 const navbar = (props) => {
     let classList = [classes.Navbar, classes.Open].join(' ');
     if(!props.toggle){
         classList = [classes.Navbar, classes.Close].join(' ');
+    }
+    let logoutButton = null;
+    if(props.isLoggedIn) {
+        logoutButton = <li onClick={() => props.togglePage("logout")}>Logout</li>;
     }
     return (
         <nav className={classList}>
@@ -14,7 +19,7 @@ const navbar = (props) => {
                 <li onClick={() => props.togglePage("global")}>Global</li>
                 <li onClick={() => props.togglePage("login")}>Login</li>
                 <li onClick={() => props.togglePage("register")}>Register</li>
-                <li onClick={() => props.togglePage("logout")}>Logout</li>
+                {logoutButton}
             </ul>
         </nav>
     );

@@ -1,0 +1,28 @@
+.LoginForm {
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.LoginForm input {
+    height: 50px;
+    width: 90%;
+    background: #2d4249;
+    color: #99c1bc;
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    outline-style: none;
+}
+
+.LoginForm button {
+    height: 50px;
+    width: 90%;
+    background: #99c1bc;
+    color: #2d4249;
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px #2d4249;
+    outline-style: none;
+}

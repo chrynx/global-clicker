@@ -1,0 +1,42 @@
+.RegisterPage {
+    height: 100vh;
+    width: 100%;
+    background: #f6eedb;
+    color: #927682;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.RegisterPage h1 {
+    font-size: 50px;
+}
+.underLine {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.underLine div {
+    height: 2px;
+}
+.underLine:hover div {
+    background: #927682;
+    animation: stretch 0.5s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes stretch {
+    0% {
+        height: 2px;
+        width: 0px;
+    }
+    50% {
+        height: 2px;
+        width: 50%;
+    }
+    100% {
+        height: 2px;
+        width: 100%;
+    }
+}
